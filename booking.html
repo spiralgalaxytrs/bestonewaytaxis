@@ -107,13 +107,13 @@
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6">
                   <div class="form-group">
-                    <label for="contact-name">Name (required)</label>
+                    <label for="contact-name">>Pick up location (required)</label>
                     <input type="text" id="location-1" name="origin" class="form-control"  placeholder="Pickup Location" required> 
                   </div>
                 </div><!-- /.col-lg-6 -->
                 <div class="col-sm-6 col-md-6 col-lg-6">
                   <div class="form-group">
-                    <label for="contact-name">Name (required)</label>
+                    <label for="contact-name">Drop location (required)</label>
                     <input type="text" id="location-2" name="destination"  required class="form-control" placeholder="Drop Location">
                   </div>
                 </div><!-- /.col-lg-6 -->
@@ -121,50 +121,103 @@
                 <center>  
                         <button class="btn btn-success" type="button" onclick="calcRoute();">Check Price</button>
                 </center>
+
+                
+                
+                
+                
+                   <div class="clearfix"></div><!-- /.clearfix -->
                                 
+            <div class="">
+                
+                
+                 
+            
+        
+            <div id="ma" style="display: none;">  
+                <br><br>                              
+                                 
+                <b> <div id="output" class="result-table"></div></b>
+                <div class="container-map" id="google-map"></div> 
+<br><br>
+               <div class="col-md-6" required>
+                <div class="service-thumbnail d-flex flex-fill">
+                <img src="https://a1droptaxi.com/img/etios.png" alt="#" style="height: 130px; width: 130px; ">
+                <div id="output1" class="meta-item">
+            </div>
+        </div>
+    </div>
+                
+                 <div class="col-md-6">
+                <div class="service-thumbnail d-flex flex-fill">
+                <img src="https://a1droptaxi.com/img/crysta.png" alt="#" style="height: 130px; width: 130px; ">
+                <div id="output2" class="meta-item">
+            </div>
+        </div>
+    </div>
+
+                
+
+                <div class="col-md-6">
+                <div class="service-thumbnail d-flex flex-fill">
+                <img src="https://a1droptaxi.com/img/traveller.png" alt="#" style="height: 130px; width: 130px; ">
+                <div id="output3" class="meta-item">
+            </div>
+        </div>
+    </div>
+        </div> 
+              
+              
+                
+                
+                
+                
+                
+                
+                
+                
                 <div class="col-sm-6 col-md-6 col-lg-6">
                   <div class="form-group">
                     <label for="contact-name">Name (required)</label>
-                    <input type="text" class="form-control" placeholder="Name" id="contact-name" name="contact-name"
-                      required>
+                   <input type="text" placeholder="Your Name" class="form-control" id="name"                      required>
                   </div>
                 </div><!-- /.col-lg-6 -->
                 <div class="col-sm-6 col-md-6 col-lg-6">
                   <div class="form-group">
-                    <label for="contact-Phone">Phone (required)</label>
-                    <input type="text" class="form-control" placeholder="Phone" id="contact-Phone" name="contact-phone" required>
+                    <label for="contact-Phone">Phone Number(required)</label>
+                    <input type="tel" placeholder="Phone Number" class="form-control" placeholder="Your Number"id="p" pattern="[6-9]{1}[0-9]{9}" title="Enter Valid Phone Number" required>
                   </div>
                 </div><!-- /.col-lg-6 -->
                 <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="form-group">
-                      <label for="contact-Phone">Inquiry (required)</label>
-                      <select class="form-control">
-                        <option value="0">IT Management Services</option>
-                        <option value="1">IT Management Services 2</option>
-                        <option value="2">IT Management Services 3</option>
+                      <label for="contact-Phone">Car Type(required)</label>
+                      <select id="cars" name="cars" class="form-control">
+                        <option value="Sedan">Sedan</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Traveller">Traveller</option>
                       </select>
                     </div>
                 </div><!-- /.col-lg-6 -->
                 <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="form-group">
-                      <label for="contact-Phone">Inquiry (required)</label>
-                      <select class="form-control">
-                        <option value="0">IT Management Services</option>
-                        <option value="1">IT Management Services 2</option>
-                        <option value="2">IT Management Services 3</option>
+                      <label for="contact-Phone">Service Type (required)</label>
+                      <select id="ser" name="ser" class="form-control">
+                        <option value="One-Way">One-Way</option>
+                        <option value="Round">Round</option>
+                        
                       </select>
                     </div>
                 </div><!-- /.col-lg-6 -->
                 <div class="col-sm-6 col-md-6 col-lg-6">
                   <div class="form-group">
-                    <label for="contact-website">Website (optional)</label>
-                    <input type="date" class="form-control" placeholder="Website (optional)" id="contact-website" name="contact-website">
+                    <label for="contact-website">Pick up Date (required)</label>
+                    <input type="date" required placeholder="01/01/2020"  id="pickupdate" class="form-control"  >
                   </div>
                 </div><!-- /.col-lg-6 -->
                 <div class="col-sm-6 col-md-6 col-lg-6">
                   <div class="form-group">
-                    <label for="contact-email">Email (required)</label>
-                    <input type="time" class="form-control" placeholder="Email" id="contact-email" name="contact-email" required>
+                    <label for="contact-email">Pick up Time (required)</label>
+                    <input type="time" required placeholder="9:00AM"  id="pickuptime" class="form-control"> 
                   </div>
                 </div><!-- /.col-lg-6 -->
                 <div class="col-sm-12 col-md-12 col-lg-12">
